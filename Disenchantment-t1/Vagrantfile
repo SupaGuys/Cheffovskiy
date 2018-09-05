@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
         config.vm.box_check_update = false
   config.vm.define "chefsrv" do |dev|
         dev.vm.network  "private_network", ip: "192.168.1.20"
-        dev.vm.hostname = "chefsrv"
+        dev.vm.hostname = "chef-server"
         config.vm.synced_folder "~/workspace/practice/vagrant/chefsrv", "/samba/sync/", type:"virtualbox"
         dev.vm.provider "virtualbox" do |vb|
          vb.memory = "2048"
@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   end
   config.vm.define "chefcli" do |dev|
         dev.vm.network  "private_network", ip: "192.168.1.30"
-        dev.vm.hostname = "chefcli"
+        dev.vm.hostname = "chef-client"
         config.vm.synced_folder "~/workspace/practice/vagrant/chefcli", "/samba/sync/", type:"virtualbox"
         dev.vm.provider "virtualbox" do |vb|
         vb.memory = "1024"

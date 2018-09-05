@@ -1,0 +1,1 @@
+{"virtualbox":{"/samba/sync/":{"type":"virtualbox","guestpath":"/samba/sync","hostpath":"/Users/akhabarov/workspace/practice/vagrant/chefsrv","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/akhabarov/workspace/practice/devops_it_baby/Cheffovskiy/Disenchantment-t1/Vagrant-chef/Chef-Server","disabled":false,"__vagrantfile":true}}}
